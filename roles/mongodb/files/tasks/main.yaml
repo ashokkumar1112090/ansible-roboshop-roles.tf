@@ -3,10 +3,14 @@
     src: mongo.repo
     dest: /etc/yum.repos.d/mongo.repo
 
-- name: install mongodb server
-  ansible.builtin.package:
+# - name: install mongodb server
+- name: Install MongoDB non-interactively
+  yum:
     name: mongodb-org
     state: present
+  # ansible.builtin.package:
+  #   name: mongodb-org
+  #   state: present
     
 - name: allow remote connections
   ansible.builtin.replace:
