@@ -3,14 +3,14 @@
     src: mongo.repo
     dest: /etc/yum.repos.d/mongo.repo
 
-# - name: Run a simple command to check disk usage
-#   ansible.builtin.command: sudo yum install -y mongodb-org
+- name: Run a simple command to check disk usage
+  ansible.builtin.command: sudo yum install -y mongodb-org
 
 
-- name: install mongodb server
-  ansible.builtin.package:          
-    name: mongodb-org
-    state: present
+# - name: install mongodb server
+#   ansible.builtin.package:          
+#     name: mongodb-org
+#     state: present
     
 - name: allow remote connections
   ansible.builtin.replace:
