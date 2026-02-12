@@ -1,3 +1,9 @@
-# MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/mysql/mysql_root_password', region='us-east-1', decrypt=True ) }}"
-#we need access for lookup means username pass for non human..so delete it and 
-#atttach iam roles to this one
+MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/{{ environment }}/mysql/mysql_root_password', region='us-east-1', decrypt=True ) }}"
+
+#in ssm param store i created parameter with name of rob/dev/sq/sl-apss....so gave that here 
+#to access from here through cmd 
+
+
+
+# we need access for lookup means username pass for non human..so delete it ang
+# atttach iam roles to this one
