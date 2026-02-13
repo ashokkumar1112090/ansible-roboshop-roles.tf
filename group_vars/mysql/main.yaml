@@ -1,6 +1,7 @@
-ansible-galaxy collection install amazon.aws
+ MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/' + env + '/mysql/mysql_root_password', region='us-east-1', decrypt=True) }}"
 
-MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/{{ env }}/mysql/mysql_root_password', region='us-east-1', decrypt=True ) }}"
+
+# MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/{{ env }}/mysql/mysql_root_password', region='us-east-1', decrypt=True ) }}"
 
 #/roboshop/dev/mysql/mysql_root_password
 #in ssm param store i created parameter with name of rob/dev/sq/sl-apss....so gave that here 
