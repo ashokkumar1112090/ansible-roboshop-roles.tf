@@ -1,9 +1,9 @@
 MONGODB_HOST: mongodb- {{ env }}.ashokking.sbs  #mongodb-dev-ashokking.sbs
-REDIS_HOST: redis- {{ env }}.ashokking.sb
-CATALOGUE_HOST: catalogue- {{ env }}.ashokking.sb
-CART_HOST: cart- {{ env }}.ashokking.sb
-USER_HOST: user- {{ env }}.ashokking.sb
-RABBITMQ_HOST: rabbitmq- {{ env }}.ashokking.sb
-MYSQL_HOST: mysql- {{ env }}.ashokking.sb
-SHIPPING_HOST: shipping- {{ env }}.ashokking.sb
-PAYMENT_HOST: payment- {{ env }}.ashokking.sb
+REDIS_HOST: redis- {{ env }}.ashokking.sbs
+CATALOGUE_HOST: catalogue- {{ env }}.ashokking.sbs
+CART_HOST: cart- {{ env }}.ashokking.sbs
+USER_HOST: user- {{ env }}.ashokking.sbs
+RABBITMQ_HOST: rabbitmq- {{ env }}.ashokking.sbs
+MYSQL_HOST: mysql- {{ env }}.ashokking.sbs
+SHIPPING_HOST: shipping- {{ env }}.ashokking.sbs
+PAYMENT_HOST: payment- {{ env }}.ashokking.sbs
